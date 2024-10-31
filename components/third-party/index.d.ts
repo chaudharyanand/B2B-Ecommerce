@@ -1,0 +1,11 @@
+declare module "react-rating-stars-component";
+declare module "@fortawesome/react-fontawesome";
+declare module "@fortawesome/fontawesome-svg-core";
+declare module "@fortawesome/free-solid-svg-icons";
+declare module "@fortawesome/free-brands-svg-icons";
+declare module "@fortawesome/free-regular-svg-icons";
+declare module "@headlessui/react";
+declare module "react-responsive-carousel";
+declare module "react-multi-carousel";
+declare module "moment";
+declare module "formik";

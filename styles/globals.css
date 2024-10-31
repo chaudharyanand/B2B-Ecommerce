@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('/fonts/Quicksand-Regular.ttf');
+  }
+
+  @font-face {
+    font-family: 'GreatVibes';
+    src: url('/fonts/GreatVibes-Regular.ttf');
+    font-display: swap;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  font-family: Quicksand, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slide.selected .captionLeft .captionTitle {
+  text-align: left;
+  animation: slideInLeft;
+  animation-duration: 1s;
+}
+
+.slide.selected .captionRight .captionTitle {
+  text-align: right;
+  animation: slideInRight;
+  animation-duration: 1s;
+}
+
+.hero-carousel .control-dots {
+  bottom: 50px !important;
+  display: none;
+}
+
+.review-carousel .control-dots {
+  bottom: 0px !important;
+  margin: 0 !important;
+}
+
+.carousel .control-dots .dot {
+  background: #5FA800 !important;
+}
+
+.hero-carousel .control-btn {
+  position: absolute;
+  top: calc(48%);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hero-carousel .control-prev {
+  left: 0.2%;
+}
+
+.hero-carousel .control-next {
+  right: 0.2%;
+}
+
+.primaryThemeButton {
+  @apply text-primaryButtonTextColor bg-primaryButtonBgColor border-2 border-primaryButtonBorderColor uppercase rounded ease-out duration-150 flex justify-center items-center
+}
+
+.primaryThemeButton:hover {
+  @apply bg-primaryButtonBgColorHover text-primaryButtonTextColorHover border-2 border-primaryButtonBorderColorHover
+}
+
+.secondaryThemeButton {
+  @apply text-secondaryButtonTextColor bg-secondaryButtonBgColor border-2 border-secondaryButtonBorderColor uppercase rounded ease-out duration-150 flex justify-center items-center
+}
+
+.secondaryThemeButton:hover {
+  @apply bg-secondaryButtonBgColorHover text-secondaryButtonTextColorHover border-2 border-secondaryButtonBorderColorHover
+}
